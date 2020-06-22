@@ -1,6 +1,5 @@
 public class Lens {
 
-
     private String model;
     private Integer focalDistanceMin;
     private Integer focalDistanceMax;
@@ -14,7 +13,7 @@ public class Lens {
             this.focalDistanceMax = focalDistanceMax;
             lensQuantity++;
         } else {
-            System.out.println("Please enter valid focal distance values");
+            throw new IllegalArgumentException("Invalid focal distance");
         }
     }
 

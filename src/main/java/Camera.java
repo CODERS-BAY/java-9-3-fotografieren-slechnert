@@ -5,7 +5,7 @@ public class Camera {
     private Boolean colored;
     private Lens lens;
 
-    private static Integer cameraQuantity = 0;
+    private static Integer CAMERA_QUANTITY = 0;
 
     public Camera(String brand, Integer megaPixels, Double displaySize, Boolean colored, Lens lens) {
         this.brand = brand;
@@ -13,7 +13,7 @@ public class Camera {
         this.displaySize = displaySize;
         this.colored = colored;
         this.lens = lens;
-        cameraQuantity++;
+        CAMERA_QUANTITY++;
     }
 
     public String getBrand() {
@@ -56,12 +56,12 @@ public class Camera {
         this.lens = lens;
     }
 
-    public static Integer getCameraQuantity() {
-        return cameraQuantity;
+    public static Integer getCAMERA_QUANTITY() {
+        return CAMERA_QUANTITY;
     }
 
-    public void setCameraQuantity(Integer cameraQuantity) {
-        this.cameraQuantity = cameraQuantity;
+    public void setCAMERA_QUANTITY(Integer CAMERA_QUANTITY) {
+        this.CAMERA_QUANTITY = CAMERA_QUANTITY;
     }
 
     @Override

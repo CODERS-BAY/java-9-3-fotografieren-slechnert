@@ -1,5 +1,4 @@
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Main {
         Camera closeUpCam = new Camera("Tesla", 590215, 10D, true, makro);
 
         Integer lensQuantity = Lens.getLensQuantity();
-        Integer cameraQuantity = Camera.getCameraQuantity();
+        Integer cameraQuantity = Camera.getCAMERA_QUANTITY();
         System.out.println("mainCam before edit: " + mainCam.toString());
         System.out.println("Amount of lenses: " + lensQuantity);
         System.out.println("Amount of cameras: " + cameraQuantity);
